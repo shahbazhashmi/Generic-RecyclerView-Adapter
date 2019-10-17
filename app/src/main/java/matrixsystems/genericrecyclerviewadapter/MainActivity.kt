@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() , GenericAdapter.ItemClickListener {
 
         recyclerView = findViewById(R.id.recycler_view) as RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
-        genericAdapter = GenericAdapter(this, animalNames)
+        genericAdapter = GenericAdapter(this, R.layout.row_test, animalNames)
         genericAdapter.setClickListener(this)
         recyclerView.adapter = genericAdapter
     }

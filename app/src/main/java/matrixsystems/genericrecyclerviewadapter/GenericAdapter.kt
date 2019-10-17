@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 /**
  * Created by Shahbaz Hashmi on 2019-10-17.
  */
-class GenericAdapter(context: Context, private val mData: List<String>) : RecyclerView.Adapter<GenericAdapter.ViewHolder>() {
+class GenericAdapter(context: Context, private val layout : Int, private val mData: List<String>) : RecyclerView.Adapter<GenericAdapter.ViewHolder>() {
 
     private val mInflater: LayoutInflater
     private var mClickListener: ItemClickListener? = null
@@ -21,7 +21,7 @@ class GenericAdapter(context: Context, private val mData: List<String>) : Recycl
 
     // inflates the row layout from xml when needed
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = mInflater.inflate(R.layout.row_test, parent, false)
+        val view = mInflater.inflate(layout, parent, false)
         return ViewHolder(view)
     }
 
