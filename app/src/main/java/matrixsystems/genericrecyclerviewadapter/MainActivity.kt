@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // data to populate the RecyclerView with
+
         val animalList = mutableListOf<TestModel>()
         animalList.add(TestModel("Horse"))
         animalList.add(TestModel("Cow"))
