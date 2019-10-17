@@ -14,6 +14,7 @@
 lateinit var testAdapter: GenericAdapter<TestModel>
 ```
 
+
 2. Instantiate adapter object (pass context, layout, list and Binder object in the constructor).
 
 **Set your layout data within bind method**
@@ -30,9 +31,10 @@ testAdapter = GenericAdapter(this, R.layout.row_test, animalList, object :  Gene
         })
 ```
 
+
 3. Implementation
 
-**MainActivity**
+**MainActivity.kt**
 
 ```
 package matrixsystems.genericrecyclerviewadapter
